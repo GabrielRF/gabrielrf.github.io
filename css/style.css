@@ -18,3 +18,7 @@
   /* line-height: 0; */
   min-height: 300px;
 }
+
+footer.page-footer {
+  margin-top: 0px;
+}
