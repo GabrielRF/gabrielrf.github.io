@@ -22,3 +22,7 @@
 footer.page-footer {
   margin-top: 0px;
 }
+
+a:hover {
+  /* color: #CCCCCC !important; */
+}
