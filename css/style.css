@@ -14,7 +14,7 @@
 }
 
 .parallax-container {
-    height: auto;
-    /* line-height: 0; */
-    min-height: 300px;
-  }
+  height: auto;
+  /* line-height: 0; */
+  min-height: 300px;
+}
