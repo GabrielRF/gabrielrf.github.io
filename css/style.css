@@ -32,6 +32,11 @@
   color: #000000;
 }
 
+.toc-wrapper {
+  top: infinity;
+  bottom: 0px;
+}
+
 footer.page-footer {
   margin-top: 0px;
 }
