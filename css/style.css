@@ -19,6 +19,19 @@
   min-height: 300px;
 }
 
+.tabs .tab a {
+  color: #000000;
+  text-transform: none;
+}
+.tabs .tab a:hover {
+  color: #000000;
+}
+
+.tabs .indicator {
+  background-color: #000000;
+  color: #000000;
+}
+
 footer.page-footer {
   margin-top: 0px;
 }

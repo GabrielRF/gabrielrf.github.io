@@ -37,26 +37,81 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center black-text">Under maintenance...</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Please, be patient.</h5>
-        </div>
-        <br><br>
-      </div>
+  <div id="index-banner" class="parallax-container valign-wrapper">
+    <div class="container row center">
+      <h1 class="header bold black-text center-align">Projects</h1>
+      <h6 class="header bold">To read; To learn; To do;</h6>
     </div>
     <div class="parallax">
-      <img src="imgs/parallax1.png" alt="Under construction" style="display: block; transform: translate3d(-50%, 19px, 0px)";>
+      <img src="imgs/parallax1.png" class="right-align" alt="Under construction" style="display: block; transform: translate3d(-50%, 19px, 0px)";>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s3"><a href="#lmgtfyBot"><i class="fa fa-paper-plane-o"></i>lmgtfy_bot</a></li>
+          <li class="tab col s3"><a href="#RastreioBot"><i class="fa fa-paper-plane-o"></i>RastreioBot</a></li>
+          <li class="tab col s3"><a href="#SafeBot"><i class="fa fa-paper-plane-o"></i>Safe_bot</a></li>
+          <li class="tab col s3"><a href="#Zabbix"><i class="fa fa-paper-plane-o"></i>Zabbix</a></li>
+        </ul>
+      </div>
+      <div id="lmgtfyBot" class="col s12">
+        <div class="col s12 m9 l9">
+          <p>First attempt to make a Telegram Bot using the oficial API and also a Python API, available on GitHub</p>
+          <p><a href="https://github.com/eternnoir/pyTelegramBotAPI">https://github.com/eternnoir/pyTelegramBotAPI</a></p>
+          <p>The bot gets a message from the user and replies a link to the search using the tool Let me Google that for you.</p>
+          <a href="https://telegram.me/lmgtfy_bot">Click here to try it.</a>
+        </div>
+        <div class="col s12 m3 l3 right-align">
+          <a class="black-text" href="https://telegram.me/lmgtfy_bot"><img class="circle responsive-img" src="imgs/lmgtfybot.jpg"></a>
+        </div>
+      </div>
+      <div id="RastreioBot" class="col s12">
+        <div class="col s12 m9 l9">
+          <p>A Telegram Bot that tracks packages from the Brazilian Postal Service.</p>
+          <p>The user sends the tracking code and the bot replies the last update available on the system.</p>
+          <a href="https://telegram.me/rastreiobot">Click here to try it.</a>
+        </div>
+        <div class="col s12 m3 l3 right-align">
+          <a href="https://telegram.me/rastreiobot"><img class="circle responsive-img" src="imgs/rastreiobot.jpg"></a>
+        </div>
+      </div>
+      <div id="SafeBot" class="col s12">
+        <div class="col s12 m9 l9">
+          <p>This bot is able to create passwords and calculate hashes.</p>
+          <p>The user is guided through the whole proccess by changes made to the keyboard, as it is replaced by the available options.</p>
+          <p>It's open source and doesn't keep logs, to make it reliable.</p>
+          <a href="https://telegram.me/safe_bot">Click here to try it.</a>
+        </div>
+        <div class="col s12 m3 l3 right-align">
+          <a class="black-text" href="https://telegram.me/safe_bot"><img class="circle responsive-img" src="imgs/safebot.jpg"></a>
+        </div>
+      </div>
+      <div id="Zabbix" class="col s12">
+        <div class="col s12 m9 l9">
+          <p>The project is a Telegram bot that sends Zabbix notifications to a defined user or group. The main idea is to replace e-mail alerts, allowing the team to act quickly keeping the assets running properly.</p>
+          <p>It uses the project Telegram CLI (command line interface), available on <a href="https://github.com/vysheng/tgl">https://github.com/vysheng/tgl</a></p>
+        </div>
+        <div class="col s12 m3 l3 right-align">
+          <img class="circle responsive-img" src="imgs/zabbixbot.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax-container valign-wrapper section no-pad">
+    <div class="container row center">
+      <h1>Teste</h1>
+    </div>
+    <div class="parallax">
+      <img src="imgs/parallax1.png" style="display: block; transform: translate3d(-50%, 19px, 0px)";>
     </div>
   </div>
   <footer class="page-footer grey">
     <div class="container">
-      <div class="row">
+      <div class="row" id="gabuino">
         <div class="col l12 s12">
-          <h5 class="white-text">About me</h5>
+          <h5 class="white-text">Gabuino</h5>
           <p class="white-text text-lighten-4">Lorem ipsum dolor sit amet, mel ex dicant albucius, possit vocent nec ea, quem consul persius ei eum. Per complectitur interpretaris ad, id unum simul eos. Semper tritani qui an, mel ad falli diceret vocibus. Nam dictas audire repudiandae id, vis ludus efficiendi eu.</p>
           <p class="white-text text-lighten-4">Duo ex illud tation, ne qui prompta detracto delectus, vix ea vide porro. Mel id aperiri copiosae postulant. Quod periculis sadipscing ex duo, sint petentium his eu. Cum maluisset theophrastus in, no vim facilis prodesset. Natum adipisci ex duo.</p>
           <p class="white-text text-lighten-4">Neglegentur signiferumque sea id. Sed purto eros principes te. Modus menandri ut vix, sed omnes noluisse ea. Nisl contentiones mel cu. Ex eripuit euripidis eam. Consulatu gloriatur quo no, in est quis choro.</p>
@@ -65,11 +120,11 @@
     </div>
     <div class="footer-copyright">
       <div class="container row">
-        <div class="col s6 left-align">
-          <a class="white-text" href="https://github.com/GabrielRF/gabrielrf.github.io"><i class="fa fa-cc"></i> Some rights reserved.</a>
+        <div class="col s7 left-align">
+          <a class="white-text" href="https://github.com/GabrielRF/gabrielrf.github.io"><i class="fa fa-cc"></i> License</a>
         </div>
-        <div class="col s6 right-align">
-          <a class="white-text" href="http://materializecss.com"><i class="fa fa-code"></i> Made by Materialize</a>
+        <div class="col s5 right-align">
+          <a class="white-text" href="http://materializecss.com"><i class="fa fa-code"></i> Materialize</a>
         </div>
       </div>
     </div>
