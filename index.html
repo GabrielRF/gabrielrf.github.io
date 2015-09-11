@@ -52,10 +52,10 @@
     </a>
     <ul>
       <li>
-        <a class="btn-floating red  toc-wrapper hide-on-med-and-down"><i class="material-icons">insert_chart</i></i></a>
+        <a class="btn-floating red  toc-wrapper tooltipped hide-on-med-and-down" data-position="left" data-delay="50" data-tooltip="About" href="#about"><i class="material-icons">person_pin</i></a>
       </li>
       <li>
-        <a class="btn-floating yellow darken-1 toc-wrapper hide-on-med-and-down"><i class="material-icons">format_quote</i></a>
+        <a class="btn-floating yellow darken-1 toc-wrapper tooltipped hide-on-med-and-down" data-position="left" data-delay="50" data-tooltip="Links" href="#links"><i class="fa fa-thumbs-o-up"> </i></a>
       </li>
       <li>
         <a class="btn-floating green toc-wrapper tooltipped hide-on-med-and-down" data-position="left" data-delay="50" data-tooltip="Arduino" href="#arduino"><i class="material-icons">developer_board</i></a>
@@ -210,7 +210,7 @@
             <img class="materialboxed" width="100%" src="imgs/parallax1.png">
           </div>
           <div class="col s3 m3 l3">
-            <img class="materialboxed" width="100%" src="imgs/parallax1.png">
+            <img class="materialboxed" width="100%" data-caption="Graph generated on Zabbix." src="imgs/GabuinoZabbix.png">
           </div>
         </div>
       </div>
@@ -218,7 +218,7 @@
   </div>
   <div class="parallax-container valign-wrapper section no-pad">
     <div class="container row center">
-      <h1>Teste</h1>
+      <h1 id="about">About</h1>
     </div>
     <div class="parallax">
       <img src="imgs/parallax1.png" style="display: block; transform: translate3d(-50%, 19px, 0px)";>
@@ -226,12 +226,17 @@
   </div>
   <footer class="page-footer grey">
     <div class="container">
-      <div class="row" id="gabuino">
+      <div class="row">
         <div class="col l12 s12">
-          <h5 class="white-text">Gabuino</h5>
-          <p class="white-text text-lighten-4">Lorem ipsum dolor sit amet, mel ex dicant albucius, possit vocent nec ea, quem consul persius ei eum. Per complectitur interpretaris ad, id unum simul eos. Semper tritani qui an, mel ad falli diceret vocibus. Nam dictas audire repudiandae id, vis ludus efficiendi eu.</p>
-          <p class="white-text text-lighten-4">Duo ex illud tation, ne qui prompta detracto delectus, vix ea vide porro. Mel id aperiri copiosae postulant. Quod periculis sadipscing ex duo, sint petentium his eu. Cum maluisset theophrastus in, no vim facilis prodesset. Natum adipisci ex duo.</p>
-          <p class="white-text text-lighten-4">Neglegentur signiferumque sea id. Sed purto eros principes te. Modus menandri ut vix, sed omnes noluisse ea. Nisl contentiones mel cu. Ex eripuit euripidis eam. Consulatu gloriatur quo no, in est quis choro.</p>
+          <h5 class="white-text" id="links">Links</h5>
+          <p class="white-text text-lighten-4">Some companies that I follow, like the filosophy and recommend to my friends.</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat" href="#ieee">IEEE</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat" href="#cocatech">CocaTech</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat btn-flat" href="#ifixit">iFixit</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat" href="#calangohc">Calando Hacker Club</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat" href="#interlegis">Interlegis</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat" href="#digitalocean">Digital Ocean</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat" href="#dropbox">Dropbox</p>
         </div>
       </div>
     </div>
@@ -246,6 +251,57 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modal Structure -->
+  <div id="ieee" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>IEEE</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer"><a href="#!" class="modal-action modal-close btn-flat left">Close</a></div>
+  </div>
+  <div id="cocatech" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>CocaTech</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer"><a href="#!" class="modal-action modal-close btn-flat left">Close</a></div>
+  </div>
+  <div id="ifixit" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>iFixit</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer"><a href="#!" class="modal-action modal-close btn-flat left">Close</a></div>
+  </div>
+  <div id="calangohc" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Calango Hacker Club</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer"><a href="#!" class="modal-action modal-close btn-flat left">Close</a></div>
+  </div>
+  <div id="interlegis" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Interlegis</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer"><a href="#!" class="modal-action modal-close btn-flat left">Close</a></div>
+  </div>
+  <div id="digitalocean" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Digital Ocean</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer"><a href="#!" class="modal-action modal-close btn-flat left">Close</a></div>
+  </div>
+  <div id="dropbox" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Dropbox</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer"><a href="#!" class="modal-action modal-close btn-flat left">Close</a></div>
+  </div>
 
 
   <!--  Scripts-->
