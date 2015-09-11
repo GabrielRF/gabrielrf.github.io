@@ -26,7 +26,7 @@
           <i class="fa fa-github"> </i>
         </a></li>
         <li><a class="white-text" href="http://telegram.me/GabrielRF">
-          <i class="fa fa-paper-plane-o"> </i>
+          <i class="fa fa-send"> </i>
         </a></li>
       </ul>
 
@@ -46,15 +46,31 @@
       <img src="imgs/parallax1.png" class="right-align" alt="Under construction" style="display: block; transform: translate3d(-50%, 19px, 0px)";>
     </div>
   </div>
-  <div class="toTop row toc-wrapper col s12 m12 l12">
-    <a class="btn-floating btn-large white" href="#logo-container"><i class="material-icons black-text">keyboard_arrow_up</i></a>
+  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn white tooltipped toc-wrapper" data-position="left" data-delay="50" data-tooltip="Go to top" href="#logo-container" id="staggered-test">
+      <i class="material-icons black-text">keyboard_arrow_up</i>
+    </a>
+    <ul>
+      <li>
+        <a class="btn-floating red  toc-wrapper hide-on-med-and-down"><i class="material-icons">insert_chart</i></i></a>
+      </li>
+      <li>
+        <a class="btn-floating yellow darken-1 toc-wrapper hide-on-med-and-down"><i class="material-icons">format_quote</i></a>
+      </li>
+      <li>
+        <a class="btn-floating green toc-wrapper tooltipped hide-on-med-and-down" data-position="left" data-delay="50" data-tooltip="Arduino" href="#arduino"><i class="material-icons">developer_board</i></a>
+      </li>
+      <li>
+        <a class="btn-floating blue toc-wrapper tooltipped hide-on-med-and-down" data-position="left" data-delay="50" data-tooltip="Telegram" href="#telegram"><i class="material-icons">send</i></a>
+      </li>
+    </ul>
   </div>
   <div class="container">
     <div class="row">
       <div class="col s12"  id="telegrambots">
         <div class="row">
           <div class="section">
-            <h3>Telegram</h3>
+            <h3 id="telegram">Telegram</h3>
             <div class="col s12 m12 l9 no-padding">
               <p><a href="https://telegram.org"><i class="fa fa-external-link"></i> Telegram.org</a></p>
               <p class="no-padding">Telegram is a messaging app with a focus on speed and security, it’s super fast, simple and free. You can use Telegram on all your devices at the same time — your messages sync seamlessly across any of your phones, tablets or computers.</p>
@@ -67,10 +83,10 @@
           </div>
         </div>
         <ul class="tabs">
-          <li class="tab col s3"><a href="#lmgtfyBot"><i class="fa fa-paper-plane-o"></i>lmgtfy_bot</a></li>
-          <li class="tab col s3"><a href="#RastreioBot"><i class="fa fa-paper-plane-o"></i>RastreioBot</a></li>
-          <li class="tab col s3"><a href="#SafeBot"><i class="fa fa-paper-plane-o"></i>Safe_bot</a></li>
-          <li class="tab col s3"><a href="#Zabbix"><i class="fa fa-paper-plane-o"></i>Zabbix</a></li>
+          <li class="tab col s3"><a href="#lmgtfyBot"><i class="fa fa-send"></i>lmgtfy_bot</a></li>
+          <li class="tab col s3"><a href="#RastreioBot"><i class="fa fa-send"></i>RastreioBot</a></li>
+          <li class="tab col s3"><a href="#SafeBot"><i class="fa fa-send"></i>Safe_bot</a></li>
+          <li class="tab col s3"><a href="#Zabbix"><i class="fa fa-send"></i>Zabbix</a></li>
         </ul>
       </div>
       <div id="lmgtfyBot" class="col s12 grey lighten-4">
@@ -128,7 +144,7 @@
     <div class="row">
       <div class="divider"></div>
       <div class="section">
-        <h3>Arduino</h3>
+        <h3 id="arduino">Arduino</h3>
         <div class="col s12 m12 l9 no-padding">
           <p><a href="https://www.arduino.cc"><i class="fa fa-external-link"></i> Arduino.cc</a></p>
           <p class="no-padding">Arduino is an open-source prototyping platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online. All this is defined by a set of instructions programmed through the Arduino Software (IDE).</p>

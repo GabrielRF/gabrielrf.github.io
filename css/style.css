@@ -33,9 +33,6 @@
 }
 
 .toc-wrapper {
-  top: infinity;
-  bottom: 0px;
-  float: right;
 }
 
 .pin-top {
@@ -48,14 +45,12 @@
   opacity: 1;
   visibility: visible;
   transition: opacity 0.3s ease, visibility 0 0;
+  position: relative !important;
 }
 
 .toTop {
-  position: fixed;
   margin:0;
   padding:0;
-  right: 25px;
-  bottom: 25px;
   z-index: 99;
   top:initial !important;
 }
