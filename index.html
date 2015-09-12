@@ -12,68 +12,393 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="grey" role="navigation">
+  <nav class="grey darken-2" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Gabriel R F</a>
       <ul class="right hide-on-med-and-down">
-        <li><a class="white-text" href="http://twitter.com/GabRF">
+        <li><a class="white-text tooltipped" data-position="left" data-delay="50" data-tooltip="Twitter" href="http://twitter.com/GabRF" target="_blank">
           <i class="fa fa-twitter"> </i>
         </a></li>
-        <li><a class="white-text" href="https://br.linkedin.com/in/gabrielrochaferreira">
+        <li><a class="white-text tooltipped" data-position="left" data-delay="50" data-tooltip="LinkedIn" href="https://br.linkedin.com/in/gabrielrochaferreira" target="_blank">
           <i class="fa fa-linkedin"> </i>
         </a></li>
-        <li><a class="white-text" href="https://github.com/GabrielRF">
+        <li><a class="white-text tooltipped" data-position="left" data-delay="50" data-tooltip="GitHub" href="https://github.com/GabrielRF" target="_blank">
           <i class="fa fa-github"> </i>
         </a></li>
-        <li><a class="white-text" href="http://telegram.me/GabrielRF">
-          <i class="fa fa-paper-plane-o"> </i>
+        <li><a class="white-text tooltipped" data-position="left" data-delay="50" data-tooltip="Telegram" href="http://telegram.me/GabrielRF" target="_blank">
+          <i class="fa fa-send"> </i>
         </a></li>
       </ul>
-
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="http://twitter.com/GabRF">Twitter</a></li>
-        <li><a href="https://br.linkedin.com/in/gabrielrochaferreira">LinkedIn</a></li>
+        <li class="black-text"><h5>Sections:<h5></li>
+        <li><a href="#telegram">Telegram</a></li>
+        <li><a href="#arduino">Arduino</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#links">Links</a></li>
+        <div class="divider"></div>
+        <li class="black-text"><h5>Contact:</h5></li>
+        <li><a href="http://twitter.com/GabRF" target="_blank">Twitter</a></li>
+        <li><a href="https://br.linkedin.com/in/gabrielrochaferreira" target="_blank">Linkedin</a></li>
+        <li><a href="https://github.com/GabrielRF" target="_blank">GitHub</a></li>
+        <li><a href="http://telegram.me/GabrielRF" target="_blank">Message</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center black-text">Under maintenance...</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Please, be patient.</h5>
-        </div>
-        <br><br>
-      </div>
+  <div id="index-banner" class="parallax-container valign-wrapper">
+    <div class="container row center">
+      <h1 class="header bold black-text center-align">Projects</h1>
+      <h6 class="header bold">To read; To learn; To do;</h6>
     </div>
     <div class="parallax">
-      <img src="imgs/parallax1.png" alt="Under construction" style="display: block; transform: translate3d(-50%, 19px, 0px)";>
+      <img src="imgs/datacenter.jpg" class="right-align" alt="Under construction" style="display: block; transform: translate3d(-50%, 19px, 0px)";>
     </div>
   </div>
-  <footer class="page-footer grey">
+  <div class="fixed-action-btn" style="bottom: 45px; right: 40px;">
+    <a class="btn-floating btn black tooltipped toc-wrapper" data-position="left" data-delay="50" data-tooltip="Go to top" href="#logo-container" id="staggered-test">
+      <i class="material-icons white-text">keyboard_arrow_up</i>
+    </a>
+    <ul>
+      <li>
+        <a class="btn-floating red  toc-wrapper tooltipped hide-on-med-and-down" data-position="left" data-delay="50" data-tooltip="Links" href="#links"><i class="fa fa-thumbs-o-up"> </i></a>
+      </li>
+      <li>
+        <a class="btn-floating yellow darken-1 toc-wrapper tooltipped hide-on-med-and-down" data-position="left" data-delay="50" data-tooltip="About" href="#about"><i class="material-icons">person_pin</i></a>
+      </li>
+      <li>
+        <a class="btn-floating green toc-wrapper tooltipped hide-on-med-and-down" data-position="left" data-delay="50" data-tooltip="Arduino" href="#arduino"><i class="material-icons">developer_board</i></a>
+      </li>
+      <li>
+        <a class="btn-floating blue toc-wrapper tooltipped hide-on-med-and-down" data-position="left" data-delay="50" data-tooltip="Telegram" href="#telegram"><i class="material-icons">send</i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12"  id="telegrambots">
+        <div class="row">
+          <div class="section">
+            <h3 id="telegram">Telegram</h3>
+            <div class="col s12 m12 l9 no-padding">
+              <p><a href="https://telegram.org" target="_blank"><i class="fa fa-external-link"></i> Telegram.org</a></p>
+              <p class="no-padding">Telegram is a messaging app with a focus on speed and security, it’s super fast, simple and free. You can use Telegram on all your devices at the same time — your messages sync seamlessly across any of your phones, tablets or computers.</p>
+              <h5>Telegram bots API</h5>
+              <p>The bot API allows you to connect bots to our system. Telegram Bots are special accounts that do not require an additional phone number to set up. These accounts serve as an interface for code running somewhere on your server.</p>
+            </div>
+            <div class="col s0 m3 l3 hide-on-med-and-down">
+              <img class="responsive-img circle col s4 m12 l12" src="imgs/telegram-logo.png">
+            </div>
+          </div>
+        </div>
+        <ul class="tabs">
+          <li class="tab col s3"><a href="#lmgtfyBot"><i class="fa fa-send"></i>lmgtfy_bot</a></li>
+          <li class="tab col s3"><a href="#RastreioBot"><i class="fa fa-send"></i>RastreioBot</a></li>
+          <li class="tab col s3"><a href="#SafeBot"><i class="fa fa-send"></i>Safe_bot</a></li>
+          <li class="tab col s3"><a href="#Zabbix"><i class="fa fa-send"></i>Zabbix</a></li>
+        </ul>
+      </div>
+      <div id="lmgtfyBot" class="col s12 grey lighten-4">
+        <div class="col s12 m3 l3">
+          <div class="col s4 m0 l0"><br></div>
+          <a href="https://telegram.me/lmgtfy_bot" target="_blank"><img class="col s4 m12 l12 circle responsive-img" src="imgs/lmgtfybot.jpg"></a>
+          <div class="col s4 m0 l0"><br></div>
+          </div>
+          <div class="col s12 m9 l9">
+            <p>First attempt to make a Telegram Bot using the oficial API and also a Python API, available on GitHub</p>
+            <p><a href="https://github.com/eternnoir/pyTelegramBotAPI" target="_blank">https://github.com/eternnoir/pyTelegramBotAPI</a></p>
+            <p>The bot gets a message from the user and replies a link to the search using the tool Let me Google that for you.</p>
+            <a href="https://telegram.me/lmgtfy_bot" target="_blank">Click here to try it.</a>
+          </div>
+        </div>
+      <div id="RastreioBot" class="col s12 grey lighten-4">
+        <div class="col s12 m3 l3">
+          <div class="col s4 m0 l0"><br></div>
+          <a href="https://telegram.me/rastreiobot" target="_blank"><img class="col s4 m12 l12 circle responsive-img" src="imgs/rastreiobot.jpg"></a>
+          <div class="col s4 m0 l0"><br></div>
+        </div>
+        <div class="col s12 m9 l9">
+          <p>A Telegram Bot that tracks packages from the Brazilian Postal Service.</p>
+          <p>The user sends the tracking code and the bot replies the last update available on the system.</p>
+          <a href="https://telegram.me/rastreiobot" target="_blank">Click here to try it.</a>
+        </div>
+      </div>
+      <div id="SafeBot" class="col s12 grey lighten-4">
+        <div class="col s12 m3 l3">
+          <div class="col s4 m0 l0"><br></div>
+          <a href="https://telegram.me/safe_bot" target="_blank"><img class="col s4 m12 l12 circle responsive-img" src="imgs/safebot.jpg"></a>
+          <div class="col s4 m0 l0"><br></div>
+        </div>
+        <div class="col s12 m9 l9">
+          <p>This bot is able to create passwords and calculate hashes.</p>
+          <p>The user is guided through the whole proccess by changes made to the keyboard, as it is replaced by the available options.</p>
+          <p>It's open source and doesn't keep logs. <a href="https://github.com/GabrielRF/Telegram-Safe-Bot" target="_blank"></i> Code on GitHub</a></p>
+          <a href="https://telegram.me/safe_bot" target="_blank">Click here to try it.</a>
+        </div>
+      </div>
+      <div id="Zabbix" class="col s12 grey lighten-4">
+        <div class="col s12 m3 l3">
+          <div class="col s4 m0 l0"><br></div>
+          <img class="col s4 m12 l12 circle responsive-img" src="imgs/zabbixbot.jpg">
+          <div class="col s4 m0 l0"><br></div>
+        </div>
+        <div class="col s12 m9 l9">
+          <p>The project is a Telegram bot that sends Zabbix notifications to a defined user or group. The main idea is to replace e-mail alerts, allowing the team to act quickly keeping the assets running properly.</p>
+          <p>It uses the project Telegram CLI (command line interface), available on <a href="https://github.com/vysheng/tgl" target="_blank">https://github.com/vysheng/tgl</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="divider"></div>
+      <div class="section">
+        <h3 id="arduino">Arduino</h3>
+        <div class="col s12 m12 l9 no-padding">
+          <p><a href="https://www.arduino.cc" target="_blank"><i class="fa fa-external-link"></i> Arduino.cc</a></p>
+          <p class="no-padding">Arduino is an open-source prototyping platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online. All this is defined by a set of instructions programmed through the Arduino Software (IDE).</p>
+        </div>
+        <div class="col s0 m3 l3 hide-on-med-and-down">
+          <img class="circle responsive-img col s4 m12 l12" src="imgs/arduino-logo.png">
+        </div>
+        <div class="container col s12 no-padding">
+          <h5>Gabuino</h5>
+          <p>Zabbix Agent running on Arduino to monitor data center environments.</p>
+          <p>It's a small device made using open hardware and open software. It gathers data from the environment and send it to a Zabbix Server, allowing the infrastructure team to acknoledge everything that is happening on real time.</p>
+          <p><a href="https://github.com/GabrielRF/Arduino-Zabbix-Agent" target="_blank"><i class="fa fa-code"></i> Code on GitHub</a></p>
+          <ul class="collapsible popout" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header waves-effect waves-block">List of materials</div>
+              <div class="collapsible-body">
+                <table class="striped">
+                  <thead>
+                    <th data-field="model">Model</th>
+                    <th data-field="function">Function</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Arduino Uno</td>
+                      <td>ATmega328.</td>
+                    </tr>
+                    <tr>
+                      <td>Network Shield</td>
+                      <td>Network shield made for Arduino.</td>
+                    </tr>
+                    <tr>
+                      <td>Sensor Shield</td>
+                      <td>Shield used to connect the sensors to the Arduino.</td>
+                    </tr>
+                    <tr>
+                      <td>DHT11</td>
+                      <td>Air temperature and humidity.</td>
+                    </tr>
+                    <tr>
+                      <td>DS18b20</td>
+                      <td>Air temperature.</td>
+                    </tr>
+                    <tr>
+                      <td>PIR</td>
+                      <td>Infra-red / Presence monitor.</td>
+                    </tr>
+                    <tr>
+                      <td>N/A</td>
+                      <td>Soil humidity sensor.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+          <div class="col s3 m3 l3">
+            <img class="materialboxed" width="100%" data-caption="Gabuino top view." src="imgs/GabuinoTop.jpg">
+          </div>
+          <div class="col s3 m3 l3">
+            <img class="materialboxed" width="100%" data-caption="Gabuino ports and shields." src="imgs/GabuinoPorts.jpg">
+          </div>
+          <div class="col s3 m3 l3">
+            <img class="materialboxed" width="100%" data-caption="DHT11, DS18b20, PIR and Soil humidity sensor." src="imgs/sensors.png">
+          </div>
+          <div class="col s3 m3 l3">
+            <img class="materialboxed" width="100%" data-caption="Graph generated on Zabbix." src="imgs/GabuinoZabbix.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax-container valign-wrapper section no-pad" id="about">
+    <div class="container row center">
+      <h1>About</h1>
+    </div>
+    <div class="parallax">
+      <img src="imgs/datacenter.jpg" style="display: block; transform: translate3d(-50%, 19px, 0px)";>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l12 no-padding">
+        <p>I'm a network engineer who lives between bits and strings.</p>
+        <p>My academic career has always been about wireless communication, but my job is focused on keeping things running. It's about maintaining servers and data center running smoothly.</p>
+        <p>Google can be an awesome teacher. Being self taught is necessary. Recycle yourself is a pleasure.</p>
+        <p>My model is: Sharing is the best way to avoid mistakes, to save time and to move forward. Go open-source!</p>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer grey darken-2">
     <div class="container">
       <div class="row">
         <div class="col l12 s12">
-          <h5 class="white-text">About me</h5>
-          <p class="white-text text-lighten-4">Lorem ipsum dolor sit amet, mel ex dicant albucius, possit vocent nec ea, quem consul persius ei eum. Per complectitur interpretaris ad, id unum simul eos. Semper tritani qui an, mel ad falli diceret vocibus. Nam dictas audire repudiandae id, vis ludus efficiendi eu.</p>
-          <p class="white-text text-lighten-4">Duo ex illud tation, ne qui prompta detracto delectus, vix ea vide porro. Mel id aperiri copiosae postulant. Quod periculis sadipscing ex duo, sint petentium his eu. Cum maluisset theophrastus in, no vim facilis prodesset. Natum adipisci ex duo.</p>
-          <p class="white-text text-lighten-4">Neglegentur signiferumque sea id. Sed purto eros principes te. Modus menandri ut vix, sed omnes noluisse ea. Nisl contentiones mel cu. Ex eripuit euripidis eam. Consulatu gloriatur quo no, in est quis choro.</p>
+          <h5 class="white-text" id="links">Links</h5>
+          <p class="white-text text-lighten-4">Some companies that I follow, like the filosophy and recommend to my friends.</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat grey darken-2 no-padding center" href="#cocatech">CocaTech</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat grey darken-2 no-padding center" href="#ifixit">iFixit</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat grey darken-2 no-padding center" href="#calangohc">Calando HC</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat grey darken-2 no-padding center" href="#interlegis">Interlegis</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat grey darken-2 no-padding center" href="#digitalocean">Digital Ocean</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat grey darken-2 no-padding center" href="#dropbox">Dropbox</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat grey darken-2 no-padding center" href="#uber">Uber</p>
+          <p class="white-text text-lighten-4 col s3 m3 l3 modal-trigger btn-flat grey darken-2 no-padding center" href="#raboxes">RABoxes</p>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container row">
-        <div class="col s6 left-align">
-          <a class="white-text" href="https://github.com/GabrielRF/gabrielrf.github.io"><i class="fa fa-cc"></i> Some rights reserved.</a>
+        <div class="col s7 left-align">
+          <a class="white-text" href="https://github.com/GabrielRF/gabrielrf.github.io" target="_blank"><i class="fa fa-cc"></i> License</a>
         </div>
-        <div class="col s6 right-align">
-          <a class="white-text" href="http://materializecss.com"><i class="fa fa-code"></i> Made by Materialize</a>
+        <div class="col s5 right-align">
+          <a class="white-text" href="http://materializecss.com" target="_blank"><i class="fa fa-code"></i> Materialize</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- Modal Structure -->
+  <div id="ieee" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>IEEE</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer"><a href="#links" class="modal-action modal-close btn-flat left">Close</a></div>
+  </div>
+  <div id="cocatech" class="modal bottom-sheet">
+    <div class="modal-content row">
+      <div class="col s12 m12 l9">
+        <h4><i class="fa fa-headphones"></i> CocaTech</h4>
+        <p>Daily podcast about technology. It's very good! Both quality of news and sound.</p>
+        <p>It's become a huge community of information exchange. We have groups on Facebook and on Telegram.</p>
+        <p>Everybody is welcome.</p>
+        <p><a href="https://www.cocatech.com.br" target="_blank"><i class="fa fa-external-link"></i> CocaTech.com.br</a></p>
+        <div class="modal-footer col s12 m12 l12 no-padding"><a href="#links" class="modal-action modal-close left"><i class="black-text material-icons">close</i></a></div>
+      </div>
+      <div class="col s0 m0 l3 hide-on-med-and-down">
+        <img class="responsive-img circle col s3 m12 l12" src="imgs/cocatech-logo.jpg">
+      </div>
+    </div>
+
+  </div>
+  <div id="ifixit" class="modal bottom-sheet">
+    <div class="modal-content row">
+      <div class="col s12 m12 l9">
+        <h4><i class="fa fa-wrench"></i> iFixit</h4>
+        <p>The free repair guide for everything, written by everyone.</p>
+        <p>iFixit is a wiki-based site that teaches people how to fix almost anything. Anyone can create a repair manual for a device, and anyone can also edit the existing set of manuals to improve them. Our site empowers individuals to share their technical knowledge with the rest of the world.</p>
+        <p><a href="https://www.ifixit.com" target="_blank"><i class="fa fa-external-link"></i> iFixit.com</a></p>
+        <div class="modal-footer col s12 m12 l12 no-padding"><a href="#links" class="modal-action modal-close left"><i class="black-text material-icons">close</i></a></div>
+      </div>
+      <div class="col s0 m0 l3 hide-on-med-and-down">
+        <img class="responsive-img circle col s3 m12 l12" src="imgs/ifixit-logo.png">
+      </div>
+    </div>
+  </div>
+  <div id="calangohc" class="modal bottom-sheet">
+    <div class="modal-content row">
+      <div class="col s12 m12 l9">
+        <h4><i class="material-icons">people</i> Calango Hacker Clube</h4>
+        <p>A place to share knowledge, ideas, projects and time.</p>
+        <p>It's a workspace to teach and to learn.</p>
+        <p>Our goal is to make the world a better place.</p>
+        <p><a href="http://calango.club" target="_blank"><i class="fa fa-external-link"></i>  Calango.club</a></p>
+        <div class="modal-footer col s12 m12 l12 no-padding"><a href="#links" class="modal-action modal-close left"><i class="black-text material-icons">close</i></a></div>
+      </div>
+      <div class="col s0 m0 l3 hide-on-med-and-down">
+        <img class="responsive-img circle col s3 m12 l12" src="imgs/calango-logo.png">
+      </div>
+    </div>
+  </div>
+  <div id="interlegis" class="modal bottom-sheet">
+    <div class="modal-content row">
+      <div class="col s12 m12 l9">
+        <h4><i class="material-icons">account_balance</i> Interlegis</h4>
+        <p>A team I'm proud to be a part of.</p>
+        <p>Interlegis is made of people who is willing to work hard. Everybody have the same goal.</p>
+        <p>Our mission is to encourage the government to modernize itself. We believe that technology can increase the participation of the people on the government.</p>
+        <p>We work with open-source software only. Everything we do is available on <a href="https://github.com/interlegis">GitHub.com/Interlegis</a>.</p>
+        <p><a href="http://www.interlegis.leg.br" target="_blank"><i class="fa fa-external-link"></i>  Interlegis.leg.br</a></p>
+        <div class="modal-footer col s12 m12 l12 no-padding"><a href="#links" class="modal-action modal-close left"><i class="black-text material-icons">close</i></a></div>
+      </div>
+      <div class="col s0 m0 l3 hide-on-med-and-down">
+        <img class="responsive-img col s3 m12 l12" src="imgs/interlegis-logo.jpg">
+      </div>
+    </div>
+  </div>
+  <div id="digitalocean" class="modal bottom-sheet">
+    <div class="modal-content row">
+      <div class="col s12 m12 l9">
+        <h4><i class="material-icons">cloud</i> Digital Ocean</h4>
+        <p>DigitalOcean is a cloud infrastructure provider focused on simplifying web infrastructure for software developers.</p>
+        <p>It's a virtual private server with fixed IP that works 24/7. I run my mail server and all Telegram Bots I did on it.</p>
+        <p>To get a US$ 10 discount, sign up using <a href="http://grf.xyz/digitalocean" target="_blank">this link</a>.</p>
+        <p><a href="http://www.digitalocean.com" target="_blank"><i class="fa fa-external-link"></i>  DigitalOcean.com</a></p>
+        <div class="modal-footer col s12 m12 l12 no-padding"><a href="#links" class="modal-action modal-close left"><i class="black-text material-icons">close</i></a></div>
+      </div>
+      <div class="col s0 m0 l3 hide-on-med-and-down">
+        <img class="responsive-img circle col s3 m12 l12" src="imgs/digitalocean-logo.png">
+      </div>
+    </div>
+  </div>
+  <div id="dropbox" class="modal bottom-sheet">
+    <div class="modal-content row">
+      <div class="col s12 m12 l9">
+        <h4><i class="fa fa-dropbox"> </i> Dropbox</h4>
+        <p>Dropbox is a home for all your photos, docs, videos, and files. Anything you add to Dropbox will automatically show up on all your computers, phones and even the Dropbox website — so you can access your stuff from anywhere.</p>
+        <p>Dropbox also makes it super easy to share with others, whether you're a student or professional, parent or grandparent. Even if you accidentally spill a latte on your laptop, have no fear! Relax knowing that your stuff is safe in Dropbox and will never be lost.</p>
+        <p>To get more space, sign up using <a href="http://grf.xyz/dropbox" target="_blank">this link</a>.</p>
+        <p><a href="http://www.dropbox.com" target="_blank"><i class="fa fa-external-link"></i>  Dropbox.com</a></p>
+        <div class="modal-footer col s12 m12 l12 no-padding"><a href="#links" class="modal-action modal-close left"><i class="black-text material-icons">close</i></a></div>
+      </div>
+      <div class="col s0 m0 l3 hide-on-med-and-down">
+        <img class="responsive-img circle col s3 m12 l12" src="imgs/dropbox-logo.png">
+      </div>
+    </div>
+  </div>
+  <div id="uber" class="modal bottom-sheet">
+    <div class="modal-content row">
+      <div class="col s12 m12 l9">
+        <h4><i class="material-icons">directions_car</i> Uber</h4>
+        <p>Uber gives consumers a choice between regulated taxi cab companies and other forms of transportation and provides drivers with "flexible and independent jobs". Many users enjoy the fact that you can watch the car approach on their smartphone so they know when it will arrive and that they don't need to have take a credit card or cash with them, as the money is automatically deducted from their account, with a receipt automatically sent to their email.</p>
+        <p>As Uber does not require cars to be hailed, this means that it can more easily pick up customers in less built up neighbourhoods. For this reason, it has been said that Uber helps the poor by making it easier for them to get a taxi. It also helps reduce congestion as "because Ubers can’t accept street hails, they do much less unnecessary driving-around than either yellow cabs (who are cruising for hails) or individuals (who are looking for a parking spot)." This assumes that there is no extra traffic created by people who would otherwise have used public transport or walked.</p>
+        <p>To get a $ 20 discount, sign up using <a href="http://www.uber.com/invite/ubernobrasil" target="_blank">this link</a>.</p>
+        <p><a href="http://www.uber.com" target="_blank"><i class="fa fa-external-link"></i>  Uber.com</a></p>
+        <div class="modal-footer col s12 m12 l12 no-padding"><a href="#links" class="modal-action modal-close left"><i class="black-text material-icons">close</i></a></div>
+      </div>
+      <div class="col s0 m0 l3 hide-on-med-and-down">
+        <img class="responsive-img circle col s3 m12 l12" src="imgs/uber-logo.jpg">
+      </div>
+    </div>
+  </div>
+  <div id="raboxes" class="modal bottom-sheet">
+    <div class="modal-content row">
+      <div class="col s12 m12 l9">
+        <h4><i class="material-icons">forward</i> RABoxes</h4>
+        <p>RABoxes is a mail forward service. It gives me a mail address on the USA so I can send packages and letters to it. RABoxes receives everything and sends it to me. It's reliable, fast and cheap.</p>
+        <p>Sign up using <a href="https://raboxes.com/affiliates?token=20151603d16d1de" target="_blank">this link</a>.</p>
+        <p><a href="http://www.raboxes.com" target="_blank"><i class="fa fa-external-link"></i>  RABoxes.com</a></p>
+        <div class="modal-footer col s12 m12 l12 no-padding"><a href="#links" class="modal-action modal-close left"><i class="black-text material-icons">close</i></a></div>
+      </div>
+      <div class="col s0 m0 l3 hide-on-med-and-down">
+        <img class="responsive-img circle col s3 m12 l12" src="imgs/raboxes-logo.png">
+      </div>
+    </div>
+  </div>
 
 
   <!--  Scripts-->
