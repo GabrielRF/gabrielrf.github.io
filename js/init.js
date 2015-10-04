@@ -7,7 +7,7 @@
     $('.collapsible').collapsible({accordion:false});
     $('.materialboxed').materialbox();
     $('.modal-trigger').leanModal();
-    $('a[href*=#]:not([href=#]):not([href=#lmgtfyBot]):not([href=#RastreioBot]):not([href=#SafeBot]):not([href=#Zabbix])').click(function() {
+    $('a[href*=#]:not([href=#]):not([href=#lmgtfyBot]):not([href=#RastreioBot]):not([href=#SafeBot]):not([href=#Zabbix]):not([href=#promopassagens]):not([href=#on_sale])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
