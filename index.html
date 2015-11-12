@@ -91,114 +91,39 @@
             <div class="col s12 m12 l9 no-padding">
               <p><a href="https://telegram.org"><i class="fa fa-external-link"></i> Telegram.org</a></p>
               <p class="no-padding">Telegram is a messaging app with a focus on speed and security, it’s super fast, simple and free. You can use Telegram on all your devices at the same time — your messages sync seamlessly across any of your phones, tablets or computers.</p>
-              <h5>Telegram bots API</h5>
-              <p>The bot API allows you to connect bots to our system. Telegram Bots are special accounts that do not require an additional phone number to set up. These accounts serve as an interface for code running somewhere on your server.</p>
             </div>
             <div class="col s0 m3 l3 hide-on-med-and-down">
               <img class="responsive-img circle col s4 m12 l12" src="imgs/telegram-logo.png">
             </div>
           </div>
         </div>
-        <ul class="tabs hide-on-small-only">
-          <li class="tab col s6 m3 l3"><a href="#lmgtfyBot"><i class="fa fa-send"></i>lmgtfy_bot</a></li>
-          <li class="tab col s6 m3 l3"><a href="#RastreioBot"><i class="fa fa-send"></i>RastreioBot</a></li>
-          <li class="tab col s6 m3 l3"><a href="#SafeBot"><i class="fa fa-send"></i>Safe_bot</a></li>
-        </ul>
-        <ul class="tabs hide-on-med-and-up">
-          <li class="tab col s6"><a href="#lmgtfyBot">lmgtfy</a></li>
-          <li class="tab col s6"><a href="#RastreioBot">Rastreio</a></li>
-          <li class="tab col s6"><a href="#SafeBot">Safe</a></li>
-        </ul>
       </div>
-      <div id="lmgtfyBot" class="col s12 grey lighten-4">
-        <div class="col s12 m3 l3">
+      <div id="Zabbix" class="col s12 grey lighten-5 no-padding">
+        <div class="col s0 m3 l3 hide-on-med-and-down">
           <div class="col s4 m0 l0"><br></div>
-          <a href="https://telegram.me/lmgtfy_bot"><img class="col s4 m12 l12 circle responsive-img" src="imgs/lmgtfybot.jpg"></a>
-          <div class="col s4 m0 l0"><br></div>
-          </div>
-          <div class="col s12 m9 l9">
-            <p>First attempt to make a Telegram Bot using the oficial API and also a Python API, available on GitHub</p>
-            <p><a href="https://github.com/eternnoir/pyTelegramBotAPI">https://github.com/eternnoir/pyTelegramBotAPI</a></p>
-            <p>The bot gets a message from the user and replies a link to the search using the tool Let me Google that for you.</p>
-            <a href="https://telegram.me/lmgtfy_bot">Click here to try it.</a>
-          </div>
-        </div>
-      <div id="RastreioBot" class="col s12 grey lighten-4">
-        <div class="col s12 m3 l3">
-          <div class="col s4 m0 l0"><br></div>
-          <a href="https://telegram.me/rastreiobot"><img class="col s4 m12 l12 circle responsive-img" src="imgs/rastreiobot.jpg"></a>
+          <img class="col s4 m12 l12 circle responsive-img no-padding" src="imgs/zabbixbot.jpg">
           <div class="col s4 m0 l0"><br></div>
         </div>
-        <div class="col s12 m9 l9">
-          <p>A Telegram Bot that tracks packages from the Brazilian Postal Service.</p>
-          <p>The user sends the tracking code and the bot replies the last update available on the system.</p>
-          <a href="https://telegram.me/rastreiobot">Click here to try it.</a>
+        <div class="col s12 m9 l9 no-padding">
+          <h3 id="">Zabbix</h3>
+          <p><a href="https://zabbix.com"><i class="fa fa-external-link"></i> Zabbix.com</a></p>
+          <p>Zabbix is the ultimate enterprise-level software designed for real-time monitoring of millions of metrics collected from tens of thousands of servers, virtual machines and network devices.</p>
+          <p>Zabbix is Open Source and comes at no cost.</p>
         </div>
       </div>
-      <div id="SafeBot" class="col s12 grey lighten-4">
-        <div class="col s12 m3 l3">
-          <div class="col s4 m0 l0"><br></div>
-          <a href="https://telegram.me/safe_bot"><img class="col s4 m12 l12 circle responsive-img" src="imgs/safebot.jpg"></a>
-          <div class="col s4 m0 l0"><br></div>
-        </div>
-        <div class="col s12 m9 l9">
-          <p>This bot is able to create passwords and calculate hashes.</p>
-          <p>The user is guided through the whole proccess by changes made to the keyboard, as it is replaced by the available options.</p>
-          <p>It's open source and doesn't keep logs. <a href="https://github.com/GabrielRF/Telegram-Safe-Bot"></i> Code on GitHub</a></p>
-          <a href="https://telegram.me/safe_bot">Click here to try it.</a>
-        </div>
+      <div class="col s9 m9 l9 white no-padding">
+        <p>By the daily usage of these two great tools came the idea of integrating them. How great would it be to receive all the Zabbix alerts on Telegram application instead of on my e-mail? What about the gain of reducing time to see a problem might be coming?</p>
+        <p>So, to fullfil all these needs, I've developed a solution using Python and Telegram Bots, available on <a href="https://github.com/GabrielRF/Zabbix-Telegram-Notification"><i class="fa fa-code"></i> GitHub</a>.</p>
+        <p>It immediately made the team faster and more aware of what was happening on the network.</p>
+        <p>This project used with <a href="#arduino">Gabuino</a> made the team also aware of the environment on real-time. Nothing happens on the network or on the data center without being noticed.</p>
       </div>
-      <div class='col s12 no-padding'>
+      <div class="col s3 m3 l3">
         <br>
-        <h5>Telegram channels</h5>
-        <p>Channels, a tool for broadcasting your messages to large audiences. Channels replace the old Broadcast lists and are better in every way. They can have an unlimited number of members, they can be public with a permanent URL and each post in a channel has its own view counter.</p>
-        <ul class="tabs hide-on-small-only">
-          <li class="tab col s6 m3 l3"><a href="#Zabbix"><i class="fa fa-send"></i>Zabbix</a></li>
-          <li class="tab col s6 m3 l3"><a href="#promopassagens"><i class="fa fa-send"></i>PromoPassagens</a></li>
-          <li class="tab col s6 m3 l3"><a href="#on_sale"><i class="fa fa-send"></i>On_Sale</a></li>
-        </ul>
-        <ul class="tabs hide-on-med-and-up">
-          <li class="tab col s6"><a href="#Zabbix">Zabbix</a></li>
-          <li class="tab col s6"><a href="#promopassagens">PromoPassagens</a></li>
-          <li class="tab col s6"><a href="#on_sale">On_Sale</a></li>
-        </ul>
+        <img class="responsive-img materialboxed" width="100%" data-caption="Zabbix alerts on a group." src="imgs/zabbix_group.jpeg">
       </div>
-      <div id="Zabbix" class="col s12 grey lighten-4">
-        <div class="col s12 m3 l3">
-          <div class="col s4 m0 l0"><br></div>
-          <img class="col s4 m12 l12 circle responsive-img" src="imgs/zabbixbot.jpg">
-          <div class="col s4 m0 l0"><br></div>
-        </div>
-        <div class="col s12 m9 l9">
-          <p>The project is a Telegram client that sends Zabbix notifications to a defined user, group or channel. The main idea is to replace e-mail alerts, allowing the team to act quickly keeping the assets running properly.</p>
-          <p>Largely used on <a href="#links">Interlegis</a>, it sends alerts about 300 monitored itens, including <a href="#arduino">Gabuino</a>.</p>
-          <p>It uses the project Telegram CLI (command line interface), available on <a href="https://github.com/vysheng/tgl">https://github.com/vysheng/tgl</a></p>
-        </div>
-      </div>
-      <div id="promopassagens" class="col s12 grey lighten-4">
-        <div class="col s12 m3 l3">
-          <div class="col s4 m0 l0"><br></div>
-          <img class="col s4 m12 l12 circle responsive-img" src="imgs/promopassagens.jpg">
-          <div class="col s4 m0 l0"><br></div>
-        </div>
-        <div class="col s12 m9 l9">
-          <p>This channel is fully automated. It colects data from two well known twitter users that are specialized on discounted tickets and shares the info on the channel.</p>
-          <p>The advantage of this channel is to notify people when a cheap ticket is available. On most cases there are only a few seats available, so time matters.</p>
-          <a href="https://telegram.me/promopassagens">Click here to try it.</a>
-        </div>
-      </div>
-      <div id="on_sale" class="col s12 grey lighten-4">
-        <div class="col s12 m3 l3">
-          <div class="col s4 m0 l0"><br></div>
-          <img class="col s4 m12 l12 circle responsive-img" src="imgs/on_sale.jpg">
-          <div class="col s4 m0 l0"><br></div>
-        </div>
-        <div class="col s12 m9 l9">
-          <p>Another fully automated telegram channel. It works just like PromoPassagens. The difference is that On_Sale isn't specialized on one kind of product. It gathers and shares info about almost everything that is sold below the regular price.</p>
-          <p>Users can find from gaming consoles until blenders. There are no limits. It's designed for people who likes to save money.</p>
-          <a href="https://telegram.me/on_sale">Click here to try it.</a>
-        </div>
-      </div>
+    </div>
+    <div class="center-align">
+      <a class="waves-effect waves-light grey lighten-1 black-text btn" href="Telegram.html">For Bots and Channels, click here.</a>
     </div>
   </div>
   <div class="container">
@@ -455,7 +380,7 @@
         <h4><i class="material-icons">forward</i> MyVipBox</h4>
         <p>MyVipBox is a mail forward service. It gives me an address in the USA so I can send packages and letters. The service receives everything and sends to me. It's reliable, fast and cheap.</p>
         <p>Sign up using <a href="https://www.myvipbox.com/#/?afiliado=54d9a7bc-8f9d-4cbe-9f73-6c2133a7859c">this link</a>.</p>
-        <p>Use the promocode <font color="#039be5">gabrf<font color="black"> to get 10% off.</p>
+        <p>Use the promocode <font color="#039be5">gabrf</font><font color="black"> to get 10% off.</font></p>
         <p><a href="https://www.myvipbox.com/"><i class="fa fa-external-link"></i>  MyVipBox.com</a></p>
         <div class="modal-footer col s12 m12 l12 no-padding"><a href="#links" class="modal-action modal-close left"><i class="black-text material-icons">close</i></a></div>
       </div>
@@ -471,13 +396,13 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-49523711-4', 'auto');
-    ga('send', 'pageview');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49523711-4', 'auto');
+  ga('send', 'pageview');
   </script>
 
-  </body>
+</body>
 </html>
